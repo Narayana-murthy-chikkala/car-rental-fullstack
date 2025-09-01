@@ -75,9 +75,6 @@ const Hero = () => {
 
           {/* Pickup date */}
           <div className="flex flex-col w-full md:w-auto">
-            <label htmlFor="Pickup-date" className="text-sm text-gray-600">
-              Pick-up
-            </label>
             <input
               value={pickupDate}
               onChange={(e) => setPickupDate(e.target.value)}
@@ -87,13 +84,13 @@ const Hero = () => {
               className="w-full md:w-44 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
               required
             />
+            <label htmlFor="Pickup-date" className="text-sm text-gray-600">
+              { pickupDate||'Pick-up'}
+            </label>
           </div>
 
           {/* Return date */}
           <div className="flex flex-col w-full md:w-auto">
-            <label htmlFor="Return-date" className="text-sm text-gray-600">
-              Return
-            </label>
             <input
               value={returnDate}
               onChange={(e) => setReturnDate(e.target.value)}
@@ -103,6 +100,9 @@ const Hero = () => {
               className="w-full md:w-44 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
               required
             />
+            <label htmlFor="Return-date" className="text-sm text-gray-600">
+              {returnDate || 'Return'}
+            </label>
           </div>
 
           {/* Search button */}
