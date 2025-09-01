@@ -84,9 +84,9 @@ const Hero = () => {
               className="w-full md:w-44 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
               required
             />
-            <label htmlFor="Pickup-date" className="text-sm text-gray-600">
+            <p htmlFor="Pickup-date" className="text-sm text-gray-600">
               { pickupDate||'Pick-up'}
-            </label>
+            </p>
           </div>
 
           {/* Return date */}
@@ -100,9 +100,9 @@ const Hero = () => {
               className="w-full md:w-44 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
               required
             />
-            <label htmlFor="Return-date" className="text-sm text-gray-600">
+            <p htmlFor="Return-date" className="text-sm text-gray-600">
               {returnDate || 'Return'}
-            </label>
+            </p>
           </div>
 
           {/* Search button */}
